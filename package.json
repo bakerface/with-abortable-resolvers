@@ -1,0 +1,30 @@
+{
+  "name": "with-abortable-resolvers",
+  "version": "0.0.0",
+  "description": "An abortable version of Promise.withResolvers",
+  "license": "MIT",
+  "author": "Chris Baker <mail.chris.baker@gmail.com>",
+  "type": "module",
+  "main": "dist/index.cjs",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist/*"
+  ],
+  "keywords": [
+    "AbortController",
+    "AbortSignal",
+    "Promise",
+    "withAbortableResolvers",
+    "withResolvers"
+  ],
+  "scripts": {
+    "prepare": "rollup -c"
+  },
+  "devDependencies": {
+    "@rollup/plugin-typescript": "^12.1.2",
+    "rollup": "^4.39.0",
+    "tslib": "^2.8.1",
+    "typescript": "^5.8.3"
+  }
+}
