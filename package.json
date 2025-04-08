@@ -1,6 +1,6 @@
 {
   "name": "with-abortable-resolvers",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "An abortable version of Promise.withResolvers",
   "license": "MIT",
   "author": "Chris Baker <mail.chris.baker@gmail.com>",
