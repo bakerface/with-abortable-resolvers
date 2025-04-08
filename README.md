@@ -6,8 +6,8 @@ promises in TypeScript. Consider the following example:
 ``` TypeScript
 import { withAbortableResolvers } from "with-abortable-resolvers";
 
-export function sleep<T>(ms: number, signal?: AbortSignal): Promise<void> {
-  const { promise, resolve } = withAbortableResolvers<T>(signal);
+export function sleep(ms: number, signal?: AbortSignal): Promise<void> {
+  const { promise, resolve } = withAbortableResolvers<void>(signal);
   const handle = setTimeout(resolve, ms);
   return promise.finally(() => clearTimeout(handle));
 }
